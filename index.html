@@ -11,8 +11,6 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +21,8 @@
     <!-- Simply countdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section
@@ -47,22 +47,22 @@
 
     <!-- Simply countdown -->
     <script>
-      simplyCountdown(".simply-countdown", {
+      simplyCountdown('.simply-countdown', {
         year: 2023, // required
         month: 9, // required
         day: 3, // required
         hours: 9, // Default is 0 [0-23] integer
         words: {
           //words displayed into the countdown
-          days: { singular: "Hari", plural: "Hari" },
-          hours: { singular: "Jam", plural: "Jam" },
-          minutes: { singular: "Menit", plural: "Menit" },
-          seconds: { singular: "Detik", plural: "Detik" },
+          days: { singular: 'Hari', plural: 'Hari' },
+          hours: { singular: 'Jam', plural: 'Jam' },
+          minutes: { singular: 'Menit', plural: 'Menit' },
+          seconds: { singular: 'Detik', plural: 'Detik' },
         },
         refresh: 1000, //default refresh every 1s
-        sectionClass: "simply-section", //section css class
-        amountClass: "simply-amount", // amount css class
-        wordClass: "simply-word", // word css class
+        sectionClass: 'simply-section', //section css class
+        amountClass: 'simply-amount', // amount css class
+        wordClass: 'simply-word', // word css class
         zeroPad: false,
         countUp: false, // enable count up if set to true})
       });
