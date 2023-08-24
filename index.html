@@ -64,7 +64,9 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">Angsa</h5>
+            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">
+              Angsa
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -261,6 +263,20 @@
     </script>
     <!-- End Simply countdown -->
 
+    <!-- fix bug offcanvas  -->
+    <script>
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+      offcanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'visible';
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'hidden';
+      });
+    </script>
+    <!-- end fix bug offcanvas  -->
     <!-- End Javascript -->
   </body>
 </html>

@@ -238,6 +238,10 @@
   .mynavbar .nav-link {
     font-size: 2rem;
   }
+
+  .sticky-top {
+    overflow: hidden;
+  }
 }
 
 /* Mobie */
