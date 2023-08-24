@@ -107,7 +107,8 @@
 
 .home h2,
 .info h2,
-.story h2 {
+.story h2,
+.gallery h2 {
   color: var(--brown);
   font-family: 'Sacramento', cursive;
   font-size: 5rem;
@@ -319,6 +320,28 @@
   right: auto;
 }
 /* end story */
+
+/* gallery */
+.gallery {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: var(--light-brown);
+}
+
+.gallery span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gallery p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* end gallery */
 
 /* Media Query */
 /* Dekstop */
