@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WPU Wedding</title>
+    <title>Angsa Wedding</title>
     <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -11,11 +11,16 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,600;9..40,700&family=Sacramento&display=swap"
       rel="stylesheet"
     />
     <!-- Simply countdown -->
@@ -31,12 +36,199 @@
     >
       <main>
         <h4>Kepada Bapa/Ibu/Saudara/i,</h4>
-        <h1>Hanna & Kevin</h1>
+        <h1>Angga & Sarah</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#Undangan" class="btn btn-lg mt-4">Lihat undangan</a>
+        <a href="#home" class="btn btn-lg mt-4">Lihat undangan</a>
       </main>
     </section>
+
+    <!-- offcanvas -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand logo" href="#home">Angsa</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel">Angsa</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto text-center">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end offcanvas -->
+
+    <!-- home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara pernikahan</h2>
+            <h3>Diselenggarakan pada 3 september 2023 di yogyakarta.</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+        <!-- couple -->
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Angga putra</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nisi, quisquam.
+                </p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  & Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/man.png"
+                  alt="Angga"
+                  class="img-responsive rounded-5"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/woman.png"
+                  alt="sarah"
+                  class="img-responsive rounded-5"
+                />
+              </div>
+              <div class="col-8 text-start">
+                <h3>Putri sarah</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nisi, quisquam.
+                </p>
+                <p>
+                  Putri dari Bpk. Lorem <br />
+                  & Ibu Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+
+    <!-- info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat: <strong>Grand Tjokro Yogyakarta.</strong> <br />
+              Jl. Affandi No.37, Karang Gayam, Caturtunggal, Kec. Depok, Kab.
+              Sleman, Daerah Istimewa Yogyakarta
+            </p>
+            <a
+              href="https://goo.gl/maps/RwGRSGm6iU9HJSqw6"
+              target="_blank"
+              class="btn btn-dark btn-sm my-3"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi anda salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <!-- Akad -->
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light mb-5">
+            <div class="card-header">Akad Nikah</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i
+                  ><span>08:00 - 10:00 WIB</span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-calendar-event d-block"></i
+                  ><span>Minggu, 3 September 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-body-secondary">
+              Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan
+              kekhusuan seluruh prosesi.
+            </div>
+          </div>
+        </div>
+        <!-- End Akad -->
+        <!-- Resepsi -->
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light">
+            <div class="card-header">Resepsi</div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <i class="bi bi-clock d-block"></i
+                  ><span>11:00 WIB - Selesai</span>
+                </div>
+                <div class="col-md-6">
+                  <i class="bi bi-calendar-event d-block"></i
+                  ><span>Minggu, 3 September 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-body-secondary">
+              Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan
+              kekhusuan seluruh prosesi.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Resepsi -->
+    </section>
+    <!-- end info -->
 
     <!-- Javascript -->
     <script
@@ -67,8 +259,8 @@
         countUp: false, // enable count up if set to true})
       });
     </script>
-    <!-- Simply countdown -->
+    <!-- End Simply countdown -->
 
-    <!-- Javascript -->
+    <!-- End Javascript -->
   </body>
 </html>
