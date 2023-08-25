@@ -1,5 +1,6 @@
 /* Variable */
 :root {
+  --dark-brown: #56412d;
   --brown: #755b33;
   --light-brown: #f3ebe1;
   --pink: #f14e95;
@@ -177,7 +178,12 @@
 
 .info .btn {
   background-color: var(--brown) !important;
-  border-color: #594629 !important;
+  border: 1px solid var(--dark-brown);
+}
+
+.info .btn:hover {
+  background-color: var(--dark-brown) !important;
+  border: 1px solid var(--dark-brown);
 }
 
 .info .card {
@@ -320,7 +326,7 @@
   right: auto;
 }
 /* end story */
-  
+
 /* gallery */
 .gallery {
   padding-top: 10rem;
@@ -342,6 +348,48 @@
   font-weight: 300;
 }
 /* end gallery */
+
+/* RSVP */
+.rsvp {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: var(--brown);
+}
+.rsvp h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 4.5rem;
+  color: white;
+}
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--light-brown);
+  color: var(--dark-brown);
+  border: 1px solid var(--brown);
+}
+
+.rsvp button:hover {
+  background-color: var(--brown);
+  color: var(--light-brown);
+  border: 1px solid var(--brown);
+}
+
+.rsvp .form-card {
+  background-color: var(--dark-brown);
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* End RSVP */
 
 /* Media Query */
 /* Dekstop */
@@ -423,6 +471,12 @@
     height: 130px;
   }
   /* end timeline */
+
+  /* RSVP */
+  .rsvp .form-card {
+    padding: 2rem;
+  }
+  /* RSVP */
 }
 
 /* Mobie */

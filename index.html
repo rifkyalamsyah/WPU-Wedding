@@ -426,6 +426,70 @@
     </section>
     <!-- end gallery -->
 
+    <!-- RSVP -->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi kehadiran</h2>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+        </div>
+        <div class="form-card mt-4 mx-5">
+          <!-- form -->
+          <form
+            class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbxrMkyr8AqSHHONUt-dc1xg0U2HQSKz0nllvQ4qXu1705YEF35Dg_i5-GgRUuagyBZ3/exec"
+            id="my-form"
+          >
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  name="nama"
+                  placeholder="nama lengkap"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="jumlah"
+                  name="jumlah"
+                  min="1"
+                  max="5"
+                  length="1"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="status" class="form-label">Konfirmasi</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected>pilih salah satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Bisa Hadir</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12" style="margin-top: 28px">
+              <button class="btn btn-primary">Kirim</button>
+            </div>
+          </form>
+          <!-- end form -->
+        </div>
+      </div>
+    </section>
+    <!-- End RSVP -->
+
     <!-- Javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -501,6 +565,22 @@
       }
     </script>
     <!-- End Disable scroll cover -->
+
+    <!-- form -->
+    <script>
+      window.addEventListener('load', function () {
+        const form = document.getElementById('my-form');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, { method: 'POST', body: data }).then(() => {
+            alert('Konfirmasi Kehadiran Berhasil Terkirim!');
+          });
+        });
+      });
+    </script>
+    <!-- end form -->
     <!-- End Javascript -->
   </body>
 </html>
