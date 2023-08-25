@@ -109,7 +109,8 @@
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.gifts h2 {
   color: var(--brown);
   font-family: 'Sacramento', cursive;
   font-size: 5rem;
@@ -390,6 +391,42 @@
   padding-bottom: 20px;
 }
 /* End RSVP */
+
+/* gifts */
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: white;
+}
+
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* end gifts */
+
+/* footer */
+footer {
+  padding: 2rem;
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+footer a {
+  color: var(--light-brown);
+  font-weight: bold;
+  text-decoration: none;
+}
+/* end footer */
 
 /* Media Query */
 /* Dekstop */
