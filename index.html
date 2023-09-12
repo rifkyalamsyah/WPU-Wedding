@@ -36,7 +36,7 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapa/Ibu/Saudara/i,</h4>
+        <h4>Kepada <span> Bapa/Ibu/Saudara/i, </span></h4>
         <h1>Angga & Sarah</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
@@ -48,7 +48,7 @@
     <!-- end cover -->
 
     <!-- offcanvas -->
-    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <nav class="navbar navbar-expand-lg bg-transparent sticky-top mynavbar">
       <div class="container">
         <a class="navbar-brand logo" href="#home">Angsa</a>
         <button
@@ -171,6 +171,15 @@
               Jl. Affandi No.37, Karang Gayam, Caturtunggal, Kec. Depok, Kab.
               Sleman, Daerah Istimewa Yogyakarta
             </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7906.427204342376!2d110.3885606!3d-7.7671591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59ba0308b663%3A0xbf5c12e42b623181!2sGrand%20Tjokro%20Yogyakarta!5e0!3m2!1sid!2sid!4v1694504661706!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
             <a
               href="https://goo.gl/maps/RwGRSGm6iU9HJSqw6"
               target="_blank"
@@ -452,6 +461,7 @@
                   id="nama"
                   name="nama"
                   placeholder="nama lengkap"
+                  required
                 />
               </div>
             </div>
@@ -473,8 +483,8 @@
             <div class="col-12">
               <div class="mb-3">
                 <label for="status" class="form-label">Konfirmasi</label>
-                <select name="status" id="status" class="form-select">
-                  <option selected>pilih salah satu</option>
+                <select name="status" id="status" class="form-select" required>
+                  <option selected value="">pilih salah satu</option>
                   <option value="Hadir">Hadir</option>
                   <option value="Tidak Hadir">Tidak Bisa Hadir</option>
                 </select>
@@ -687,6 +697,18 @@
       });
     </script>
     <!-- end form -->
+
+    <!-- custom guest name -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+      document.querySelector('#nama').value = nama;
+    </script>
+    <!-- end custom guest name -->
     <!-- End Javascript -->
   </body>
 </html>
